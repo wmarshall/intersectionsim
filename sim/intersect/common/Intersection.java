@@ -1,4 +1,4 @@
-package sim.intersect.cli;
+package sim.intersect.common;
 
 import static java.lang.Math.sqrt;
 import static java.lang.System.out;

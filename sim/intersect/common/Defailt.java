@@ -1,4 +1,4 @@
-package sim.intersect.cli;
+package sim.intersect.common;
 
 public class Defailt extends Tile {
 	public Defailt() {

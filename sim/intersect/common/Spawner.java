@@ -1,4 +1,4 @@
-package sim.intersect.cli;
+package sim.intersect.common;
 import java.util.Random;
 public class Spawner {
 

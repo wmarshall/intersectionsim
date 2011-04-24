@@ -1,4 +1,4 @@
-package sim.intersect.cli;
+package sim.intersect.common;
 
 /**
  * This is a dummy tile, it's only functionality is as an Exception shield.

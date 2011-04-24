@@ -1,7 +1,7 @@
 /**
  * TODO IF this works right, I should have an infinitely configurable Tile.
  */
-package sim.intersect.cli;
+package sim.intersect.common;
 
 public abstract class Tile {
 	int x, y;

@@ -1,4 +1,4 @@
-package sim.intersect.cli;
+package sim.intersect.common;
 
 public enum Orientation
 // Which direction is up

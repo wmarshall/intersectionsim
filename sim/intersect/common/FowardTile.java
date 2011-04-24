@@ -1,9 +1,8 @@
-package sim.intersect.cli;
+package sim.intersect.common;
 
-public class TransitTile extends Tile {
-	Tile tiledest;
+public class FowardTile extends Tile {
 
-	public TransitTile(Orientation thisor, Tile upleft, Tile shadowupleft,
+	public FowardTile(Orientation thisor, Tile upleft, Tile shadowupleft,
 			Tile above, Tile shadowabove, Tile upright, Tile shadowupright,
 			Tile left, Tile shadowleft, Tile right, Tile shadowright,
 			Tile loleft, Tile shadowloleft, Tile below, Tile shadowbelow,
@@ -15,35 +14,24 @@ public class TransitTile extends Tile {
 
 	@Override
 	public void EvaluateAction() {
-		if (destination == this.thisor) {
-			approved = true;
-			tiledest = shadowabove;
-		} else if (destination == right.thisor) {
-			approved = true;
-			tiledest = shadowright;
-		} else if ((destination == above.thisor && above.destination != this.thisor)) {
-			approved = true;
-			tiledest = shadowupleft;
-		}
 
 	}
 
 	@Override
-	public void OnRecieve(Tile t) {
+	public void OnRecieve(Tile origin) {
 		EvaluateAction();
-
 	}
 
 	@Override
 	public String getShortname() {
 		// TODO Auto-generated method stub
-		return "T";
+		return "F";
 	}
 
 	@Override
 	public void performAction() {
-		if (approved)
-			sendContents(tiledest, destination);
+		sendContents(shadowabove, destination);
+
 	}
 
 }
