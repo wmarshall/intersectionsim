@@ -29,10 +29,10 @@ public class SenderTile extends Tile {
 		if (approved) {
 			switch (option) {
 			case Right:
-				sendContents(shadowupright, destination);
+				sendContents(shadowUpRight, destination);
 				break;
 			default:
-				sendContents(shadowabove, destination);
+				sendContents(shadowAbove, destination);
 				break;
 			}
 		}
@@ -62,13 +62,13 @@ public class SenderTile extends Tile {
 			}
 			switch (option) {
 			case Right:
-				if (above.destination != upright.thisor) {
+				if (above.destination != upRight.thisOr) {
 					approved = true;
 				}
 				break;
 			default:
-				if (upleft.destination != upright.thisor
-						&& above.upleft.destination != upright.thisor) {
+				if (upLeft.destination != upRight.thisOr
+						&& above.upLeft.destination != upRight.thisOr) {
 					approved = true;
 				}
 				break;

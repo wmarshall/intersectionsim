@@ -51,9 +51,9 @@ public class NullTile extends Tile {
 
 	@Override
 	public void OnRecieve(Tile origin) {
-		System.out.println("NONONO! NullTiles(" + x + "," + y
-				+ " cannot accept any data. Especially from " + (origin.x)
-				+ "," + (origin.y));
+		System.out.println("NONONO! NullTiles(" + xLoc + "," + yLoc
+				+ " cannot accept any data. Especially from " + (origin.xLoc)
+				+ "," + (origin.yLoc));
 
 	}
 }

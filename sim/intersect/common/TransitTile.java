@@ -15,15 +15,15 @@ public class TransitTile extends Tile {
 
 	@Override
 	public void EvaluateAction() {
-		if (destination == this.thisor) {
+		if (destination == this.thisOr) {
 			approved = true;
-			tiledest = shadowabove;
-		} else if (destination == right.thisor) {
+			tiledest = shadowAbove;
+		} else if (destination == right.thisOr) {
 			approved = true;
-			tiledest = shadowright;
-		} else if ((destination == above.thisor && above.destination != this.thisor)) {
+			tiledest = shadowRight;
+		} else if ((destination == above.thisOr && above.destination != this.thisOr)) {
 			approved = true;
-			tiledest = shadowupleft;
+			tiledest = shadowUpLeft;
 		}
 
 	}

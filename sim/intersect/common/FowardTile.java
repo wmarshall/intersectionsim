@@ -30,7 +30,7 @@ public class FowardTile extends Tile {
 
 	@Override
 	public void performAction() {
-		sendContents(shadowabove, destination);
+		sendContents(shadowAbove, destination);
 
 	}
 

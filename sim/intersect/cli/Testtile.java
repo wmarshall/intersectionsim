@@ -1,5 +1,9 @@
 package sim.intersect.cli;
 
+import sim.intersect.common.Defailt;
+import sim.intersect.common.Orientation;
+import sim.intersect.common.Tile;
+
 public class Testtile {
 
 	/**

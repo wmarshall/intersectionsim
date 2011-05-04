@@ -1,5 +1,7 @@
 package sim.intersect.cli;
 
+import sim.intersect.common.Intersection;
+
 public class Testintersection {
 
 	/**

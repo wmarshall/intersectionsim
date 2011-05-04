@@ -27,7 +27,7 @@ public class SpawnerTile extends Tile {
 			OnRecieve(this);
 		} else {
 			if (approved == true) {
-				sendContents(shadowabove, destination);
+				sendContents(shadowAbove, destination);
 			}
 		}
 	}
